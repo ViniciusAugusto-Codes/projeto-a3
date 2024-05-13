@@ -1,0 +1,595 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'calibri';
+    background: linear-gradient(72deg,#E5BAFF 1%, #be71ee 99% );
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    background-color:#E5BAFF;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px rgb(111, 15, 114);
+    z-index: 99;
+    border: 0; 
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    margin-right: 1rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons img{
+    width: 50px;
+    cursor: pointer;
+    margin-right: 1rem;
+    filter: drop-shadow(3px 3px 3px #be71ee)
+}
+
+.nav-icons img:first-child{
+    margin-right: 1rem;
+}
+
+.nav-icons>.adicional{
+    width: 50px;
+    width: 23px;
+    display: none;
+}
+
+.nav-icons>.contato{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 15x;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 4px 4px 4px #be71ee;
+}
+
+.nav-icons>.sobre{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 15x;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 4px 4px 4px #be71ee;
+}
+
+.nav-icons>.home{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 15x;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 4px 4px 4px #be71ee;
+}
+
+.nav-icons>.contato:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.nav-icons>.sobre:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.nav-icons>.home:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.nav-icons img:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.sacola{
+    margin: 0.1rem;
+    align-items: center;
+}
+
+.perfil{
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.logo:hover{
+    transform: translateY(-8px);
+    transition: 0.9s;
+}
+
+.search-box{
+    background: #be71ee;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    box-shadow: 5px 5px 5px #b761ec;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+::-webkit-input-placeholder{
+    color: white;
+}
+
+
+.search-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #E5BAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.search-box:hover > .search-text{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-button{
+    background: #be71ee;
+}
+
+
+.promocao{
+    font-size: larger;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.selector-roupas{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.selector-blusas{
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.selector-shorts{
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.selector-calcados{
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.selector-vestidos{
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 800px){
+  .logo{
+    size: 1.2rem;
+  }
+
+  .header-bottom-side{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .nav-icons{
+    position: absolute;
+    background-color: #E5BAFF;
+    width: 100%;
+    top: 150px;
+  }
+
+  .nav-icons{
+    flex-direction: column;
+  }
+
+  .nav-icons img{
+    align-items: center;
+    width: 30px;
+}
+
+ .nav-icons>.contato{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 20px;
+ }
+
+ .nav-icons>.sobre{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+.nav-icons>.home{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+}
+
+.selector-text{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 45px;
+}
+
+.selector-shorts{
+    cursor: pointer;
+}
+
+.selector-shorts:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.selector-calcados{
+    cursor: pointer;
+}
+
+.selector-calcados:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.selector-vestidos{
+    cursor: pointer;
+}
+
+.selector-vestidos:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.selector-blusas{
+    cursor: pointer;
+}
+
+.selector-blusas:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.text-all-products{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 9.5rem;
+    margin-bottom: 2rem;
+    font-size: 45px;
+}
+
+.shorts1{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.shorts2{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.shorts3{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.shorts4{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.shorts5{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.sapato1{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.sapato2{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.sapato3{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.blusa1{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.blusa2{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.blusa3{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.blusa4{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.blusa5{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.vestido1{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.vestido2{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.vestido3{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.vestido4{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.vestido5{
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.shorts1:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.shorts2:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+.shorts3:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+.shorts4:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+.shorts5:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.blusa1:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.blusa2:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.blusa3:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.blusa4:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.blusa5:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.sapato1:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.sapato2:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.sapato3:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.vestido1:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.vestido2:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.vestido3:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.vestido4:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.vestido5:hover{
+    transform: translateY(-7px);
+    transition: 0.9s;
+}
+
+.sobre-nos{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 45px;
+}
+
+.text-sobre{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 3rem;
+    margin-right: 4rem;
+}
+
+.contact{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 45px;
+}
+
+.WhatsApp{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.Instagram{
+    margin-top: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.Email{
+    margin-top: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
