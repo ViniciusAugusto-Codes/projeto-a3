@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Calibri', sans-serif;
+    background: linear-gradient(72deg, #E5BAFF 1%, #be71ee 99%);
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .header-inner-content {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar {
+    background-color: #E5BAFF;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px rgb(111, 15, 114);
+    z-index: 99;
+    border: 0;
+  }
+  
+  .navbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-right: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icons img {
+    width: 50px;
+    cursor: pointer;
+    margin-right: 1rem;
+    filter: drop-shadow(3px 3px 3px #be71ee);
+  }
+  
+  .nav-icons img:first-child {
+    margin-right: 1rem;
+  }
+  
+  .nav-icons .adicional {
+    width: 23px;
+    display: none;
+  }
+  
+  .nav-icons .contato,
+  .nav-icons .sobre,
+  .nav-icons .home {
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 4px 4px 4px #be71ee;
+  }
+  
+  .nav-icons .contato:hover,
+  .nav-icons .sobre:hover,
+  .nav-icons .home:hover,
+  .nav-icons img:hover {
+    transform: translateY(-7px);
+    transition: 0.9s;
+  }
+  
+  .sacola {
+    margin: 0.1rem;
+    align-items: center;
+  }
+  
+  .perfil {
+    margin: 0.5rem;
+    align-items: center;
+  }
+  
+  .logo:hover {
+    transform: translateY(-8px);
+    transition: 0.9s;
+  }
+  
+  .search-box {
+    background: #be71ee;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    box-shadow: 5px 5px 5px #b761ec;
+  }
+  
+  .search-text {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+  
+  .search-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #E5BAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .search-box:hover .search-text {
+    width: 240px;
+    padding: 0 6px;
+  }
+  
+  .search-box:hover .search-button {
+    background: #be71ee;
+  }
+  
+  .promocao {
+    font-size: larger;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .selector-roupas {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .selector-blusas,
+  .selector-shorts,
+  .selector-calcados,
+  .selector-vestidos {
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .selector-text {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 45px;
+  }
+  
+  .selector-shorts:hover,
+  .selector-calcados:hover,
+  .selector-vestidos:hover,
+  .selector-blusas:hover,
+  .shorts1:hover,
+  .shorts2:hover,
+  .shorts3:hover,
+  .shorts4:hover,
+  .shorts5:hover,
+  .blusa1:hover,
+  .blusa2:hover,
+  .blusa3:hover,
+  .blusa4:hover,
+  .blusa5:hover,
+  .sapato1:hover,
+  .sapato2:hover,
+  .sapato3:hover,
+  .vestido1:hover,
+  .vestido2:hover,
+  .vestido3:hover,
+  .vestido4:hover,
+  .vestido5:hover {
+    transform: translateY(-7px);
+    transition: 0.9s;
+  }
+  
+  .text-all-products {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 9.5rem;
+    margin-bottom: 2rem;
+    font-size: 45px;
+  }
+  
+  .shorts1,
+  .shorts2,
+  .shorts3,
+  .shorts4,
+  .shorts5,
+  .sapato1,
+  .sapato2,
+  .sapato3,
+  .blusa1,
+  .blusa2,
+  .blusa3,
+  .blusa4,
+  .blusa5,
+  .vestido1,
+  .vestido2,
+  .vestido3,
+  .vestido4,
+  .vestido5 {
+    margin-bottom: 1rem;
+    border: solid #be71ee;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .sobre-nos {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 45px;
+  }
+  
+  .text-sobre {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 3rem;
+    margin-right: 4rem;
+  }
+  
+  .contact {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 45px;
+  }
+  
+  .WhatsApp,
+  .Instagram,
+  .Email {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .Instagram,
+  .Email {
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 800px) {
+    .logo {
+      size: 1.2rem;
+    }
+  
+    .header-bottom-side {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 4rem;
+    }
+  
+    .nav-icons {
+      position: absolute;
+      background-color: #E5BAFF;
+      width: 100%;
+      top: 150px;
+    }
+  
+    .nav-icons {
+      flex-direction: column;
+    }
+  
+    .nav-icons img {
+      align-items: center;
+      width: 30px;
+    }
+  
+    .nav-icons .contato,
+    .nav-icons .sobre,
+    .nav-icons .home {
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 20px;
+    }
+  }
+  
