@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    background-color: #E5BAFF; /* fundo rosa */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    font-size: 50px; /* Aumenta a fonte em 100 pixels */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    padding: 20px ;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 100px;
+    margin: 30px;
+    font-size: 30px;
+    background-color: #ffffff; /* rosa mais escuro */
+    color: rgb(0, 0, 0);
+    border: 2px solid black; /* Adiciona uma borda preta */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona transição para suavizar a mudança de cor */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+}
+
+.btn:hover {
+    background-color: #e98cd9; /* Muda para a cor vermelha ao clicar */
+}
+
+.btn span {
+    /* Cor de fundo para as palavras */
+    padding: 5px; /* Ajuste o preenchimento conforme necessário */
+}
